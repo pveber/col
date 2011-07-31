@@ -1,0 +1,19 @@
+# OASIS_START
+# DO NOT EDIT (digest: b614d79fe9bb08ce6151f2e79766f905)
+version = "1.1"
+description
+ =
+ "Syntax extension to equip flat records with serialization and conversion functions"
+archive(byte) = "col.cma"
+archive(native) = "col.cmxa"
+exists_if = "col.cma"
+package "syntax" (
+ version = "1.1"
+ description = "Syntax extension for col"
+ requires = "camlp4 col"
+ archive(syntax,preprocessor) = "pa_col.cma"
+ archive(syntax,toploop) = "pa_col.cma"
+ exists_if = "pa_col.cma"
+)
+# OASIS_STOP
+

@@ -1,0 +1,40 @@
+OASISFormat:  0.2
+OCamlVersion: >= 3.12
+Name:         col
+Version:      1.1
+Synopsis:     Syntax extension to equip flat records with serialization and conversion functions
+Authors:      Martin Jambon, Philippe Veber
+License:      BSD3
+LicenseFile:  LICENCE
+Plugins:      StdFiles (0.2), META (0.2)
+BuildTools:   ocamlbuild
+Homepage:     https://github.com/pveber/col
+
+XStdFilesINSTALLFilename: INSTALL
+XStdFilesREADME: false
+XStdFilesAUTHORS: false
+
+Description:
+  This package provides a syntax extension for easier manipulation of flat records, objects or tuples and conversions from/to CSV files.
+  . 
+  This is convenient to send data to your favorite spreadsheet or plotting program.
+
+Library col
+  Path:    src
+  Modules: Col
+  
+Library pa_col
+  Path:               src
+  Modules:            Pa_col
+  FindlibParent:      col
+  FindlibName:        syntax
+  BuildDepends:       camlp4.lib, camlp4.quotations.o 
+  CompiledObject:     byte
+  XMETAType:          syntax
+  XMETARequires:      camlp4, col
+  XMETADescription:   Syntax extension for col
+
+SourceRepository head
+  Type: git
+  Location: git://github.com/pveber/col.git
+  Browser: https://github.com/pveber/col
