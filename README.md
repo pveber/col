@@ -17,4 +17,4 @@ Features
 
 Authors
 ---------
-This library was written by Martin Jambon ([webpage][http://martin.jambon.free.fr/])and is currently maintained by Philippe Veber ([github page][https://github.com/pveber]).
+This library was written by Martin Jambon ([webpage](http://martin.jambon.free.fr/)) and is currently maintained by Philippe Veber ([github page](https://github.com/pveber)).
