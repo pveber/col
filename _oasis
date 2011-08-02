@@ -2,7 +2,7 @@ OASISFormat:  0.2
 OCamlVersion: >= 3.12
 Name:         col
 Version:      1.1
-Synopsis:     Syntax extension to equip flat records with serialization and conversion functions
+Synopsis:     Syntax extension for easier manipulation of flat records
 Authors:      Martin Jambon, Philippe Veber
 License:      BSD3
 LicenseFile:  LICENCE
@@ -17,7 +17,19 @@ XStdFilesAUTHORS: false
 Description:
   This package provides a syntax extension for easier manipulation of flat records, objects or tuples and conversions from/to CSV files.
   . 
-  This is convenient to send data to your favorite spreadsheet or plotting program.
+  Scientific data is often stored in the form of tables where each line 
+  represents an object and columns are descriptors of this object (like in
+  a spreadsheet). Col is a syntax extension which generates appropriate types 
+  and functions from a statement describing a flat record, in order to
+  make the manipulation of this sort of data easier. In particular, this is 
+  convenient to send data to your favorite spreadsheet or plotting program.
+
+  Features:
+  - automatic definition of record, tuple and object types associated to a 
+    flat record, as well as conversion functions between them
+  - generation of serialization functions as tab-separated strings, 
+    parsing/unparsing of TSV files.
+
 
 Library col
   Path:    src
