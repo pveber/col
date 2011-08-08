@@ -70,7 +70,7 @@ let check_unique f l =
 
 let prefix = "__pa_col"
 let unique = let n = ref 0 in fun () -> incr n; prefix ^ (string_of_int !n)
-let run_item _loc f = <:expr< Run_col.Run_col_main.$lid:f$ >>
+let run_item _loc f = <:expr< Run_col_main.$lid:f$ >>
 
 let mod_ctyp (_loc, l) = 
   List.fold_left 
