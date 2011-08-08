@@ -1,9 +1,7 @@
 # OASIS_START
-# DO NOT EDIT (digest: b614d79fe9bb08ce6151f2e79766f905)
+# DO NOT EDIT (digest: 52d0ed27e97d92d8dd746bc35172b8ec)
 version = "1.1"
-description
- =
- "Syntax extension to equip flat records with serialization and conversion functions"
+description = "Syntax extension for easier manipulation of flat records"
 archive(byte) = "col.cma"
 archive(native) = "col.cmxa"
 exists_if = "col.cma"

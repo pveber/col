@@ -1,8 +1,11 @@
 # OASIS_START
-# DO NOT EDIT (digest: 5cbc6c9310db25b1217a73145d0d7a40)
+# DO NOT EDIT (digest: da4dc6e1e06537b9144df16a8ddbfe8a)
 # Library col
 # Library pa_col
 "src": include
+<src/*.ml{,i}>: pkg_camlp4.quotations.r
 <src/*.ml{,i}>: pkg_camlp4.quotations.o
 <src/*.ml{,i}>: pkg_camlp4.lib
+<src/*.ml{,i}>: pkg_camlp4.extend
 # OASIS_STOP
+<src/pa_col.*>: syntax_camlp4o

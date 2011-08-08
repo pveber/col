@@ -255,7 +255,7 @@ module MyOCamlbuildFindlib = struct
   
   (* this lists all supported packages *)
   let find_packages () =
-    List.map before_space (split_nl & run_and_read "ocamlfind list")
+    List.rev (List.map before_space (split_nl & run_and_read "ocamlfind list"))
   
   (* this is supposed to list available syntaxes, but I don't know how to do it. *)
   let find_syntaxes () = ["camlp4o"; "camlp4r"]

@@ -33,14 +33,14 @@ Description:
 
 Library col
   Path:    src
-  Modules: Col
+  Modules: Col, Run_col_lexer, Run_col_main
   
 Library pa_col
   Path:               src
   Modules:            Pa_col
   FindlibParent:      col
   FindlibName:        syntax
-  BuildDepends:       camlp4.lib, camlp4.quotations.o 
+  BuildDepends:       camlp4.lib, camlp4.quotations.o, camlp4.quotations.r, camlp4.extend 
   CompiledObject:     byte
   XMETAType:          syntax
   XMETARequires:      camlp4, col
